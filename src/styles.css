@@ -1,0 +1,7 @@
+/* You can add global styles to this file, and also import other style files */
+table{
+    max-width: 500px!important;
+}
+.brake {
+    white-space: pre-wrap;
+}
