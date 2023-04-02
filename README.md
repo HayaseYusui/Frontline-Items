@@ -5,7 +5,7 @@
 > 次のコマンドで更新する
 
 ```
-ng build --prod --base-href "https://yuizui.github.io/ItemsforAngular/"
+ng build --prod --base-href "https://hayaseyusui.github.io/Frontline-Items/"
 ngh --dir=dist/gd-items
 ```
 
