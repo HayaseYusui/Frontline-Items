@@ -10920,7 +10920,7 @@ textarea.form-control-lg {
 =========================*/
 @media (min-width: 1200px) {
   .navbar {
-    width: 1140px;
+    width: 100%;
     padding-left: 120px;
   }
   .text-white {
