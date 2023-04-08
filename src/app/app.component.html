@@ -9,30 +9,52 @@
 
             <div class="collapse navbar-collapse" id="Navber">
                 <ul class="navbar-nav me-auto">
-                    <li class="pb-1 nav-item"><button class="btn btn-rounded btn-sm" type=“button”
-                        onclick="location.href='#lblPistol'">ハンドガン</button></li>
-                    <li class="pb-1 nav-item"><button class="btn btn-rounded btn-sm" type=“button”
-                        onclick="location.href='#lblSmg'">サブマシンガン</button></li>
-                    <li class="pb-1 nav-item"><button class="btn btn-rounded btn-sm" type=“button”
-                        onclick="location.href='#lblSg'">ショットガン</button></li>
-                    <li class="pb-1 nav-item"><button class="btn btn-rounded btn-sm" type=“button”
-                        onclick="location.href='#lblArifle'">ライフル</button></li>
-                    <li class="pb-1 nav-item"><button class="btn btn-rounded btn-sm" type=“button”
-                        onclick="location.href='#lblsRifles'">スナイパーライフル</button></li>
-                    <li class="pb-1 nav-item"><button class="btn btn-rounded btn-sm" type=“button”
-                        onclick="location.href='#lblamRifles'">対物ライフル</button></li>
-                    <li class="pb-1 nav-item"><button class="btn btn-rounded btn-sm" type=“button”
-                        onclick="location.href='#lblLmg'">ライトマシンガン</button></li>
-                        <li class="pb-1 nav-item"><button class="btn btn-rounded btn-sm" type=“button”
-                            onclick="location.href='#lblLauncherWp'">ランチャー</button></li>
-                    <li class="pb-1 nav-item"><button class="btn btn-rounded btn-sm" type=“button”
-                        onclick="location.href='#lblmelees'">近接武器</button></li>
+                    <li class="pb-1 nav-item">
+                        <button class="btn btn-rounded btn-sm w-100 text-start" type="button"
+                            onclick="location.href='#lblPistol'">HG</button>
+                    </li>
+                    <li class="pb-1 nav-item">
+                        <button class="btn btn-rounded btn-sm w-100 text-start" type="button"
+                            onclick="location.href='#lblSmg'">SMG</button>
+                    </li>
+                    <li class="pb-1 nav-item">
+                        <button class="btn btn-rounded btn-sm w-100 text-start" type="button"
+                            onclick="location.href='#lblSg'">SG</button>
+                    </li>
+                    <li class="pb-1 nav-item">
+                        <button class="btn btn-rounded btn-sm w-100 text-start" type="button"
+                            onclick="location.href='#lblArifle'">RF</button>
+                    </li>
+                    <li class="pb-1 nav-item">
+                        <button class="btn btn-rounded btn-sm w-100 text-start" type="button"
+                            onclick="location.href='#lblsRifles'">SR</button>
+                    </li>
+                    <li class="pb-1 nav-item">
+                        <button class="btn btn-rounded btn-sm w-100 text-start" type="button"
+                            onclick="location.href='#lblamRifles'">AMR</button>
+                    </li>
+                    <li class="pb-1 nav-item">
+                        <button class="btn btn-rounded btn-sm w-100 text-start" type="button"
+                            onclick="location.href='#lblLmg'">LMG</button>
+                    </li>
+                    <li class="pb-1 nav-item">
+                        <button class="btn btn-rounded btn-sm w-100 text-start" type="button"
+                            onclick="location.href='#lblLauncherWp'">GL</button>
+                    </li>
+                    <li class="pb-1 nav-item">
+                        <button class="btn btn-rounded btn-sm w-100 text-start" type="button"
+                            onclick="location.href='#lblmelees'">近接武器</button>
+                    </li>
+                    <li class="pb-1 nav-item">
+                        <button class="btn btn-rounded btn-sm w-100 text-start" type="button"
+                            onclick="location.href='#lblHistory'">更新履歴</button>
+                    </li>
                     <!--
-                    <li class="pb-1 nav-item"><button class="btn btn-rounded btn-sm" type=“button”
+                    <li class="pb-1 nav-item"><button class="btn btn-rounded btn-sm" type="button"
                         onclick="location.href='#lblOther'" href="#lblOther">他</button></li>
                         -->
-                        <!--
-                    <li class="pb-1 nav-item"><button class="btn btn-rounded btn-sm" type=“button”
+                    <!--
+                    <li class="pb-1 nav-item"><button class="btn btn-rounded btn-sm" type="button"
                         onclick="location.href='#lblHeavyWp'">重火器</button></li> 
                     -->
                 </ul>
@@ -41,9 +63,8 @@
     </nav>
 </div>
 
-<div class="row w-100">
-    <div class="col-12 offset-sm-1 col-sm-11">
-        
+<div class="container-fluid">
+    <div class="">
         <div class="pb-5" id="lblPistol">
             <hr>
         </div>
@@ -870,8 +891,8 @@
                     </tr>
                 </tbody>
             </table>
-        </div>  
-        
+        </div>
+
         <div class="pb-5" id="lblsRifles">
             <hr>
         </div>
@@ -1285,8 +1306,8 @@
                 </tbody>
             </table>
         </div>
-        
-        
+
+
 
         <div class="pb-5" id="lblLmg">
             <hr>
@@ -1908,7 +1929,7 @@
                 </tbody>
             </table>
         </div>
-        
+
         <!--
         <div class="pb-5" id="lblOther">
             <hr>
@@ -2327,5 +2348,31 @@
         </div>
         -->
 
+        <div class="pb-5" id="lblHistory">
+            <hr>
+        </div>
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Ver</th>
+                        <th scope="col">更新日</th>
+                        <th scope="col">更新内容</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1.0.0</td>
+                        <td>2023/04/02</td>
+                        <td>新規作成</td>
+                    </tr>
+                    <tr>
+                        <td>1.1.0</td>
+                        <td>2023/04/08</td>
+                        <td>SIG 716i 追加</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 </div>

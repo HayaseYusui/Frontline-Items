@@ -5,7 +5,7 @@ import { ITEMS } from './item-database';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['../css/customstrap.css', '../css/styles.css', './app.component.css']
 })
 export class AppComponent implements OnInit {
   title = 'gundogdayo';
@@ -29,38 +29,38 @@ export class AppComponent implements OnInit {
     this.createItemList();
   }
 
-  createItemList(){
-    for( var i = 0; i < this.itemData.length; i++ ){
+  createItemList() {
+    for (var i = 0; i < this.itemData.length; i++) {
       var items = this.itemData[i];
-      if(items.classify == 'ライフル'){
+      if (items.classify == 'ライフル') {
         this.Arifles.push(items);
       }
-      if(items.classify == 'SR'){
+      if (items.classify == 'SR') {
         this.sRifles.push(items);
       }
-      if(items.classify == '対物'){
+      if (items.classify == '対物') {
         this.amRifles.push(items);
       }
-      else if(items.classify == 'ショットガン'){
+      else if (items.classify == 'ショットガン') {
         this.shotguns.push(items);
       }
-      else if(items.classify == 'SMG'){
+      else if (items.classify == 'SMG') {
         this.smgs.push(items);
       }
-      else if(items.classify == 'ハンドガン'){
+      else if (items.classify == 'ハンドガン') {
         this.sidearms.push(items);
       }
-      
-      else if(items.classify == 'LMG'){
+
+      else if (items.classify == 'LMG') {
         this.Lmgs.push(items);
       }
-      else if(items.classify == 'ランチャー'){
+      else if (items.classify == 'ランチャー') {
         this.Launchers.push(items);
       }
-      else if(items.classify == '武器戦闘'){
+      else if (items.classify == '武器戦闘') {
         this.melees.push(items);
       }
-      else{
+      else {
         this.others.push(items);
       }
       // #region 重火器格納
@@ -69,7 +69,7 @@ export class AppComponent implements OnInit {
         this.heavyweapons.push(items);
       }
       */
-     // #endregion
+      // #endregion
     }
   }
 }

@@ -435,7 +435,7 @@ export const ITEMS: ItemData[] = [
         ],
         /*説明*/note: 'ウィンチェスター社が初めて箱型弾倉を採用したレバーアクション小銃。かのルーズベルトもライオンへの最良の銃として賞賛した。現在は若干のアレンジが加えられながら日本のミロクで製造されている。最新モデルはレイルシステムに対応している。'
     },
-    // 
+    // Condition Red Ordnance Mfg CR-7
     {
         /*アイテム名*/item_name: 'CR-7 .338',
         /*画像*/items_avatar: 'assets/img/Rifle/cr7338.jpg',
@@ -465,6 +465,36 @@ export const ITEMS: ItemData[] = [
             '※次R同一目標攻撃時+20%'
         ],
         /*説明*/note: 'Condition Red Ordnance Mfgが製造しているアサルトライフル。独自開発した亜音速の民間向け弾薬である500 Blackout弾を使用している。'
+    },
+    // SIG Sauer 716
+    {
+        /*アイテム名*/item_name: 'SIG 716i TREAD',
+        /*画像*/items_avatar: 'assets/img/Rifle/r716i-16b-trd-right-web.jpg',
+        /*種別*/classify: 'ライフル',
+        /*射撃モード*/fire_mode: 'S',
+        /*信頼性*/reliability: '00[00]',
+        /*至近*/r_point_blank: '-45※',
+        /*近距離*/r_short: '-19※',
+        /*中距離*/r_middle: '-3',
+        /*遠距離*/r_long: '-18',
+        /*貫通力*/penetration: '+7',
+        /*非貫通D*/non_penetration_damage: '2D6+6',
+        /*貫通D*/penetration_damage: '3D6+7',
+        /*射程*/range: '400m',
+        /*弾数*/mag_round: '20',
+        /*必要筋力*/kinryoku: '両6/片-',
+        /*CP*/size: '2×5',
+        /*消音LV*/silence: '2',
+        /*本体価格*/item_value: '$1500[9]',
+        /*マガジン価格*/mag_value: '$10[6]',
+        /*弾薬*/cartridge: '7.62mm×51',
+        /*全長*/item_width: '940mm',
+        /*重量*/item_weight: '3,850g',
+        /*機能*/efficiency: [
+            '狙撃-10%',
+            '※次R同一目標攻撃時+20%'
+        ],
+        /*説明*/note: 'DI式を採用したSIGの最新軽量ライフル。インド陸軍や英国CTSFOで使用されている。TREADシリーズの伝統である小型ガスブロック、フリーフローティングM-LOKハンドガード、Magpul伸縮ストックを引き継ぐ。'
     },
     // #endregion
 

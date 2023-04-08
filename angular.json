@@ -27,8 +27,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css",
-              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/css/customstrap.css",
+              "src/css/styles.css"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.slim.min.js",
@@ -99,12 +100,17 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/css/customstrap.css",
+              "src/css/styles.css"
             ],
             "scripts": []
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "c8ea7c95-7efb-45a9-ba86-5b8b3a78000c"
   }
 }
