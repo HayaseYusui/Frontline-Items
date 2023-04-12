@@ -1,0 +1,66 @@
+<div>
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">個人的用途データ集</a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#Navber"
+                aria-controls="Navber" aria-expanded="false" aria-label="ナビゲーションの切替">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="Navber">
+                <ul class="navbar-nav me-auto">
+                    <li class="pb-1 nav-item">
+                        <button class="btn btn-rounded btn-sm w-100 text-start" type="button"
+                            onclick="location.href='#lblHistory'">更新履歴</button>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+</div>
+
+<div class="container-fluid">
+    <div class="pb-5" id="lblGd">
+        <hr>
+    </div>
+    <div class="list-group">
+        <li class="list-group-item list-group-item-primary" aria-disabled="true">GD</li>
+        <a href="#" class="list-group-item list-group-item-action" routerLink="/gd-rules">
+            ルール
+        </a>
+        <a href="#" class="list-group-item list-group-item-action" routerLink="/gd-items">
+            武器
+        </a>
+        <a href="#" class="list-group-item list-group-item-action disabled" routerLink="/gd-tools" tabindex="-1"
+            aria-disabled="true">
+            アイテム
+        </a>
+    </div>
+
+    <div class="pb-5" id="lblHistory">
+        <hr>
+    </div>
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Ver</th>
+                    <th scope="col">更新日</th>
+                    <th scope="col">更新内容</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1.0.0</td>
+                    <td>2023/04/02</td>
+                    <td>新規作成</td>
+                </tr>
+                <tr>
+                    <td>1.1.0</td>
+                    <td>2023/04/08</td>
+                    <td>"SIG 716i", "スタンガン" 追加</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
