@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { GditemsComponent } from './gditems/gditems.component';
 import { GdrulesComponent } from './gdrules/gdrules.component';
 import { HomeComponent } from './home/home.component';
+import { GdtoolsComponent } from './gdtools/gdtools.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     GditemsComponent,
     GdrulesComponent,
-    HomeComponent
+    HomeComponent,
+    GdtoolsComponent
   ],
   imports: [
     BrowserModule,
@@ -21,6 +23,7 @@ import { HomeComponent } from './home/home.component';
     RouterModule.forRoot([
       { path: 'gd-items', component: GditemsComponent },
       { path: 'gd-rules', component: GdrulesComponent },
+      { path: 'gd-tools', component: GdtoolsComponent },
       { path: 'home', component: HomeComponent },
       { path: '', redirectTo: '/home', pathMatch: 'full' },
       { path: '**', redirectTo: '/home' },
