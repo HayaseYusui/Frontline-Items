@@ -1,7 +1,14 @@
+export interface ViewData {
+    id: string;
+    name: string;
+    tag: string;
+    weapons: ItemData[];
+}
+
 export interface ItemData {
     item_name: string;
     items_avatar: String;
-    classify: string;
+    classify: number;
     fire_mode: string;
     reliability: string;
     r_point_blank: string;

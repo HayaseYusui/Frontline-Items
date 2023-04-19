@@ -8,6 +8,7 @@ import { GditemsComponent } from './gditems/gditems.component';
 import { GdrulesComponent } from './gdrules/gdrules.component';
 import { HomeComponent } from './home/home.component';
 import { GdtoolsComponent } from './gdtools/gdtools.component';
+import { SandboxComponent } from './sandbox/sandbox.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { GdtoolsComponent } from './gdtools/gdtools.component';
     GditemsComponent,
     GdrulesComponent,
     HomeComponent,
-    GdtoolsComponent
+    GdtoolsComponent,
+    SandboxComponent
   ],
   imports: [
     BrowserModule,
@@ -24,6 +26,7 @@ import { GdtoolsComponent } from './gdtools/gdtools.component';
       { path: 'gd-items', component: GditemsComponent },
       { path: 'gd-rules', component: GdrulesComponent },
       { path: 'gd-tools', component: GdtoolsComponent },
+      { path: 'sandbox', component: SandboxComponent },
       { path: 'home', component: HomeComponent },
       { path: '', redirectTo: '/home', pathMatch: 'full' },
       { path: '**', redirectTo: '/home' },

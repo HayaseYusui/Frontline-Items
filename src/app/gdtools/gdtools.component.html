@@ -1,0 +1,80 @@
+<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">ガンドッグだよ！</a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#Navber"
+            aria-controls="Navber" aria-expanded="false" aria-label="ナビゲーションの切替">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="Navber">
+            <ul class="navbar-nav me-auto">
+                <li class="pb-1 nav-item">
+                    <button class="btn btn-rounded btn-sm w-100 text-start" type="button" pageScroll
+                        routerLink="/gd-tools" fragment="lblItem">Item</button>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<div class="container-fluid">
+    <div>
+        <div class="pb-5" id="lblItem">
+            <hr>
+        </div>
+        <h3>アイテム</h3>
+        <div *ngFor="let tool of tools">
+            <div class="card mb-3 card-width" *ngIf="tool.itemName != null&& tool.itemName != ''">
+                <div class="card-header bg-secondary text-light">
+                    <div>{{tool.itemName}}</div>
+                </div>
+                <div class="border-bottom text-center">
+                    <img *ngIf="tool.itemsAvatar != null && tool.itemsAvatar != ''" class="img-fluid mx-auto d-block"
+                        src="{{tool.itemsAvatar}}">
+                    <div *ngIf="tool.itemsAvatar == null || tool.itemsAvatar == ''" class="py-1">
+                        <i class="bi bi-image mx-1"></i>No Image
+                    </div>
+                </div>
+                <div class="card-body py-1">
+                    <div class="card-text">
+                        <span *ngFor="let efficiency of tool.efficiency">
+                            <div>■{{efficiency}}</div>
+                        </span>
+                    </div>
+                </div>
+                <ul class="list-group list-group-horizontal border-0">
+                    <li class="list-group-item w-25 rounded-0 border-start-0 border-bottom-0 bg-secondary text-light">
+                        サイズ
+                    </li>
+                    <li class="list-group-item w-25 rounded-0 border-bottom-0">
+                        {{tool.size}}
+                    </li>
+                    <li class="list-group-item w-25 rounded-0 border-bottom-0 bg-secondary text-light">
+                        重量
+                    </li>
+                    <li class="list-group-item w-25 rounded-0 border-end-0 border-bottom-0">
+                        {{tool.itemWeight}}
+                    </li>
+                </ul>
+                <ul class="list-group list-group-horizontal border-0">
+                    <li class="list-group-item w-25 rounded-0 border-start-0 bg-secondary text-light">
+                        価格
+                    </li>
+                    <li class="list-group-item w-25 rounded-0">
+                        {{tool.itemValue}}
+                    </li>
+                    <li class="list-group-item w-25 rounded-0 bg-secondary text-light">
+                        入手値
+                    </li>
+                    <li class="list-group-item w-25 rounded-0 border-end-0">
+                        {{tool.itemRare}}
+                    </li>
+                </ul>
+                <div class="card-body py-1">
+                    <div class="card-text">
+                        {{tool.note}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

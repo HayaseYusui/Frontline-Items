@@ -1,6 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+/* 愛用フォント */
+body {
+    font-family: 'Shippori Mincho', serif;
+}
+
 table {
     max-width: 500px !important;
+}
+
+.card-width {
+    max-width: 500px;
 }
 
 .brake {
@@ -22,3 +31,13 @@ table {
     border-radius: 100px;
     width: 130px;
 }
+
+.navbar-toggler {
+    border-color: rgba(0, 0, 0, 0);
+    outline: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+

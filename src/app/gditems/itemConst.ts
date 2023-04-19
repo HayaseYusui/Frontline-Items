@@ -1,0 +1,12 @@
+export const HG = 1;
+export const SMG = 2;
+export const PDW = 3;
+export const RF = 4;
+export const DMR = 5;
+export const SG = 6;
+export const SR = 7;
+export const AMR = 8;
+export const LMG = 9;
+export const GL = 10;
+export const MELEE = 11;
+export const ECT = 999;
