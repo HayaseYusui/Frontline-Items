@@ -1,0 +1,21 @@
+.sorter-false {
+    background-image: none !important;
+}
+
+.tablesorter-headerUnSorted {
+    background-image: url('../../assets/img/icons/filter-left.svg');
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+}
+
+.tablesorter-headerAsc {
+    background-image: url('../../assets/img/icons/sort-down-alt.svg');
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+}
+
+.tablesorter-headerDesc {
+    background-image: url('../../assets/img/icons/sort-up-alt.svg');
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+}

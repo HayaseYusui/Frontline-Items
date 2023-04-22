@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['../css/customstrap.css', '../css/styles.css', './app.component.css']
 })
 export class AppComponent implements OnInit {
-  title = 'dayo';
+  title = 'root';
 
   constructor() { }
 

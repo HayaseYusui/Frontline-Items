@@ -69,7 +69,7 @@ export const TOOLS: ToolData[] = [
         /*価格*/itemValue: '$',
         /*入手*/itemRare: '9',
         /*重量*/itemWeight: '4000g',
-        /*機能*/efficiency: [''],
+        /*機能*/efficiency: [],
         /*説明*/note: '高エネルギー食品をパックしたもの。一人前３日分。従来からおいしさアップ、生徒からの評価は"味気ないブリティッシュ・カンティーン"',
     },
     {
@@ -79,7 +79,7 @@ export const TOOLS: ToolData[] = [
         /*価格*/itemValue: '$',
         /*入手*/itemRare: '9',
         /*重量*/itemWeight: '8000g',
-        /*機能*/efficiency: [''],
+        /*機能*/efficiency: [],
         /*説明*/note: 'コンパクトで軽量な水上バイクで、水上を移動することができる。',
     },
     {
@@ -89,7 +89,7 @@ export const TOOLS: ToolData[] = [
         /*価格*/itemValue: '$',
         /*入手*/itemRare: '9',
         /*重量*/itemWeight: '500g',
-        /*機能*/efficiency: [''],
+        /*機能*/efficiency: [],
         /*説明*/note: '小型・軽量のGPSデバイスで、プレイヤーの位置を追跡し、簡単にナビゲートすることができる。',
     },
     {
@@ -99,7 +99,7 @@ export const TOOLS: ToolData[] = [
         /*価格*/itemValue: '$',
         /*入手*/itemRare: '9',
         /*重量*/itemWeight: '1500g',
-        /*機能*/efficiency: [''],
+        /*機能*/efficiency: [],
         /*説明*/note: '簡単に膨らませたり縮めたりできる、快適で軽量なスリーピングパッド。',
     },
     {
@@ -109,7 +109,7 @@ export const TOOLS: ToolData[] = [
         /*価格*/itemValue: '$',
         /*入手*/itemRare: '9',
         /*重量*/itemWeight: '500g',
-        /*機能*/efficiency: [''],
+        /*機能*/efficiency: [],
         /*説明*/note: '水に濡れても火がつくマッチ。必要なときにいつでも火を起こせる。',
     },
     {
@@ -119,7 +119,7 @@ export const TOOLS: ToolData[] = [
         /*価格*/itemValue: '$',
         /*入手*/itemRare: '9',
         /*重量*/itemWeight: '200g',
-        /*機能*/efficiency: [''],
+        /*機能*/efficiency: [],
         /*説明*/note: '小型でコンパクトなストローで、あらゆる水源の水をろ過することができる。',
     },
     {
@@ -139,7 +139,7 @@ export const TOOLS: ToolData[] = [
         /*価格*/itemValue: '$',
         /*入手*/itemRare: '9',
         /*重量*/itemWeight: '1000g',
-        /*機能*/efficiency: ['朦朧8','10失敗でアンバランス'],
+        /*機能*/efficiency: ['朦朧8', '10失敗でアンバランス'],
         /*説明*/note: '強力な音波を放ち、敵を混乱させ、バランスを崩させる非殺傷兵器。',
     },
     {
@@ -149,7 +149,7 @@ export const TOOLS: ToolData[] = [
         /*価格*/itemValue: '$',
         /*入手*/itemRare: '9',
         /*重量*/itemWeight: '00g',
-        /*機能*/efficiency: [''],
+        /*機能*/efficiency: [],
         /*説明*/note: '',
     },
     {
@@ -159,7 +159,7 @@ export const TOOLS: ToolData[] = [
         /*価格*/itemValue: '$',
         /*入手*/itemRare: '9',
         /*重量*/itemWeight: '00g',
-        /*機能*/efficiency: [''],
+        /*機能*/efficiency: [],
         /*説明*/note: '',
     },
     {
@@ -169,7 +169,7 @@ export const TOOLS: ToolData[] = [
         /*価格*/itemValue: '$',
         /*入手*/itemRare: '9',
         /*重量*/itemWeight: '00g',
-        /*機能*/efficiency: [''],
+        /*機能*/efficiency: [],
         /*説明*/note: '',
     },
     {
@@ -179,7 +179,7 @@ export const TOOLS: ToolData[] = [
         /*価格*/itemValue: '$',
         /*入手*/itemRare: '9',
         /*重量*/itemWeight: '4000g',
-        /*機能*/efficiency: ['60分持続','屋内飛行不可','耐久10'],
+        /*機能*/efficiency: ['60分持続', '屋内飛行不可', '耐久10'],
         /*説明*/note: '小型の無人航空機。上空から偵察することができる。',
     },
     {
@@ -189,7 +189,7 @@ export const TOOLS: ToolData[] = [
         /*価格*/itemValue: '$1000',
         /*入手*/itemRare: '9',
         /*重量*/itemWeight: '1000g',
-        /*機能*/efficiency: ['10分持続','耐久5','ドローン2個セット'],
+        /*機能*/efficiency: ['10分持続', '耐久5', 'ドローン2個セット'],
         /*説明*/note: '偵察や監視に使用できる、小型軽量でボビンのような見た目の二輪ドローン。空は飛べないが、機動性が高いため屋内調査に優れる。',
     }
 ];

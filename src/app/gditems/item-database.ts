@@ -6,7 +6,7 @@ import * as itemType from './itemConst';
 * -- ReadMe!! --
 * アイテムはここで定義します。
 * classifyにはitemType.○○を指定してください。
-* 上記以外だと未分類項目に入れられます。
+* ECTまたは上記以外だと未分類項目に入れられます。画面に表示されないので未採用置き場として活用してください。
 * efficiencyは[]内に'',''で繋ぐと改行されます。
 */
 
@@ -24,7 +24,7 @@ export const ITEMS: ItemData[] = [
         r_long: '',
         penetration: bullet.CAL_50AE_PNT,
         non_penetration_damage: bullet.CAL_50AE_MIN,
-        penetration_damage: bullet.CAL_50AE_MIN,
+        penetration_damage: bullet.CAL_50AE_MAX,
         range: '',
         mag_round: '',
         kinryoku: '',
@@ -478,7 +478,7 @@ export const ITEMS: ItemData[] = [
         /*画像*/items_avatar: 'assets/img/Rifle/cr7338.jpg',
         /*種別*/classify: itemType.DMR,
         /*射撃モード*/fire_mode: 'S',
-        /*信頼性*/reliability: '□[00]',
+        /*信頼性*/reliability: '00[99]',
         /*至近*/r_point_blank: '-57※',
         /*近距離*/r_short: '-37※',
         /*中距離*/r_middle: '-15',
@@ -508,7 +508,7 @@ export const ITEMS: ItemData[] = [
         /*画像*/items_avatar: 'assets/img/Rifle/r716i-16b-trd-right-web.jpg',
         /*種別*/classify: itemType.DMR,
         /*射撃モード*/fire_mode: 'S',
-        /*信頼性*/reliability: '00[00]',
+        /*信頼性*/reliability: '□[00]',
         /*至近*/r_point_blank: '-45※',
         /*近距離*/r_short: '-19※',
         /*中距離*/r_middle: '-3',
@@ -530,7 +530,67 @@ export const ITEMS: ItemData[] = [
             '狙撃-10%',
             '※次R同一目標攻撃時+20%'
         ],
-        /*説明*/note: 'DI式を採用したSIGの最新軽量ライフル。インド陸軍や英国CTSFOで使用されている。TREADシリーズの伝統である小型ガスブロック、フリーフローティングM-LOKハンドガード、Magpul伸縮ストックを引き継ぐ。'
+        /*説明*/note: 'SIGの最新軽量ライフル。DI式で精度が高く、射撃精度の向上を目指した設計となっている。インド陸軍や英国CTSFOで使用されている。TREADシリーズの伝統である小型ガスブロック、フリーフローティングM-LOKハンドガード、Magpul伸縮ストックを引き継ぐ。'
+    },
+    // SIG Sauer MCX
+    {
+        /*アイテム名*/item_name: 'SIG Sauer MCX',
+        /*画像*/items_avatar: 'assets/img/Rifle/Sig_sauer_mcx.jpg',
+        /*種別*/classify: itemType.RF,
+        /*射撃モード*/fire_mode: 'S/F',
+        /*信頼性*/reliability: '□[00]',
+        /*至近*/r_point_blank: '-30※',
+        /*近距離*/r_short: '-15※',
+        /*中距離*/r_middle: '0',
+        /*遠距離*/r_long: '-25',
+        /*貫通力*/penetration: bullet.CAL_556X45_PNT,
+        /*非貫通D*/non_penetration_damage: bullet.CAL_556X45_MIN,
+        /*貫通D*/penetration_damage: bullet.CAL_556X45_MAX,
+        /*射程*/range: '300m',
+        /*弾数*/mag_round: '30',
+        /*必要筋力*/kinryoku: '両6/片-',
+        /*CP*/size: '2×4',
+        /*消音LV*/silence: '2',
+        /*本体価格*/item_value: '$2,500[10]',
+        /*マガジン価格*/mag_value: '$10[6]',
+        /*弾薬*/cartridge: '5.56mm×45',
+        /*全長*/item_width: '',
+        /*重量*/item_weight: '',
+        /*機能*/efficiency: [
+            '狙撃-20%',
+            '※次R同一目標攻撃時+15%'
+        ],
+        /*説明*/note: 'SIGの汎用ライフルMCX。伝統的なショートストロークガスピストン式を採用している。'
+    },
+    // SIG Sauer MCX SPEAR
+    {
+        /*アイテム名*/item_name: 'SIG Sauer MCX SPEAR',
+        /*画像*/items_avatar: 'assets/img/Rifle/mcx-spear-web-16-2.jpg',
+        /*種別*/classify: itemType.DMR,
+        /*射撃モード*/fire_mode: 'S',
+        /*信頼性*/reliability: '00[00]',
+        /*至近*/r_point_blank: '-45※',
+        /*近距離*/r_short: '-22※',
+        /*中距離*/r_middle: '-6',
+        /*遠距離*/r_long: '-21',
+        /*貫通力*/penetration: bullet.CAL_762X51_PNT,
+        /*非貫通D*/non_penetration_damage: bullet.CAL_762X51_MIN,
+        /*貫通D*/penetration_damage: bullet.CAL_762X51_MAX,
+        /*射程*/range: '400m',
+        /*弾数*/mag_round: '20',
+        /*必要筋力*/kinryoku: '両6/片-',
+        /*CP*/size: '2×4',
+        /*消音LV*/silence: '2',
+        /*本体価格*/item_value: '$2,500[10]',
+        /*マガジン価格*/mag_value: '$10[6]',
+        /*弾薬*/cartridge: '7.62mm×51',
+        /*全長*/item_width: '',
+        /*重量*/item_weight: '',
+        /*機能*/efficiency: [
+            '狙撃-20%',
+            '※次R同一目標攻撃時+20%'
+        ],
+        /*説明*/note: 'SIGの汎用ライフルMCXのバリエーション。大口径ライフルだが折りたたみ可能なストックが採用されており、携行性に優れている。民間仕様が一般販売されている。'
     },
     //GIAT_FAMAS_felin
     {
@@ -644,7 +704,7 @@ export const ITEMS: ItemData[] = [
             /*射程*/range: '350m',
             /*弾数*/mag_round: '30',
             /*必要筋力*/kinryoku: '両6/片8★',
-            /*CP*/size: '2×4(1×1)',
+            /*CP*/size: '2×4',
             /*消音LV*/silence: '2',
             /*本体価格*/item_value: '$2,000[11]',
             /*マガジン価格*/mag_value: '$10[6]',
@@ -675,7 +735,7 @@ export const ITEMS: ItemData[] = [
             /*射程*/range: '350m',
             /*弾数*/mag_round: '30',
             /*必要筋力*/kinryoku: '両6/片8★',
-            /*CP*/size: '2×4(1×1)',
+            /*CP*/size: '2×4',
             /*消音LV*/silence: '2',
             /*本体価格*/item_value: '$3,500[14]',
             /*マガジン価格*/mag_value: '$10[6]',
@@ -1078,6 +1138,33 @@ export const ITEMS: ItemData[] = [
         /*機能*/efficiency: [],
         /*説明*/note: 'チェコ製のポリマーフレーム短機関銃。発展途上国の法執行機関で採用例が見られる。その性能・価格・ブランドから、アメリカ市場では非常に人気の高いPCCであり、マグプル社含む各社から多くの拡張アクセサリーが販売されている。全自動射撃機能がついたA1 短機関銃と 民間用の半自動射撃限定である S1の2モデルがある。'
     },
+    //Sig Sauer MPX
+    {
+        /*アイテム名*/item_name: 'Sig Sauer MPX',
+        /*画像*/items_avatar: 'assets/img/Rifle/MPX.jpg',
+        /*種別*/classify: itemType.SMG,
+        /*射撃モード*/fire_mode: 'S/F',
+        /*信頼性*/reliability: '□[99]',
+        /*至近*/r_point_blank: '-20',
+        /*近距離*/r_short: '0',
+        /*中距離*/r_middle: '0',
+        /*遠距離*/r_long: '-40',
+        /*貫通力*/penetration: bullet.CAL_9X19_PNT,
+        /*非貫通D*/non_penetration_damage: bullet.CAL_9X19_MIN,
+        /*貫通D*/penetration_damage: bullet.CAL_9X19_MAX,
+        /*射程*/range: '200m',
+        /*弾数*/mag_round: '30',
+        /*必要筋力*/kinryoku: '両4/片5',
+        /*CP*/size: '2×3',
+        /*消音LV*/silence: '3',
+        /*本体価格*/item_value: '$900[6]',
+        /*マガジン価格*/mag_value: '$6[6]',
+        /*弾薬*/cartridge: '9mm×19',
+        /*全長*/item_width: '410/660mm',
+        /*重量*/item_weight: '2,700g',
+        /*機能*/efficiency: [],
+        /*説明*/note: 'Sig Sauerが設計・製造しているSMG。法執行機関、軍関係者、民間シューターの間で人気を博している。'
+    },
     //Diamondback Firearms DBX
     {
         /*アイテム名*/item_name: 'Diamondback Firearms DBX',
@@ -1252,6 +1339,36 @@ export const ITEMS: ItemData[] = [
     // #endregion
 
     // #region ハンドガン
+    //.460 Rowland
+    {
+        item_name: '.460 Rowland',
+        items_avatar: 'assets/img/Handgun/460-Rowland.jpg',
+        classify: itemType.HG,
+        fire_mode: 'セミ',
+        reliability: '銃依存',
+        r_point_blank: '(-5)',
+        r_short: '(-5)',
+        r_middle: '(-5)',
+        r_long: '×',
+        penetration: bullet.CAL_460ROW_PNT,
+        non_penetration_damage: bullet.CAL_460ROW_MIN,
+        penetration_damage: bullet.CAL_460ROW_MAX,
+        range: '50m',
+        mag_round: '',
+        kinryoku: '',
+        size: '',
+        silence: '(+1)',
+        item_value: '',
+        mag_value: '元値x3[10]',
+        cartridge: '.460 Rowland',
+        item_width: '',
+        item_weight: '',
+        efficiency: [
+            '使用可能:M1911系、Glock21、S&W M&P、Sig Sauer P220',
+            '.45ACP使用不可'
+        ],
+        note: 'Johnny Rowlandが.45ACPをもっと強くしたいと開発した弾薬。初速は約1.6倍、エネルギーは約2.7倍にまで上昇した。FCUに専用部品の取り付けが必要で、その場合は.45ACPが使用不可になる。'
+    },
     //AF AF2011
     {
         item_name: 'AF AF2011',
@@ -1259,8 +1376,8 @@ export const ITEMS: ItemData[] = [
         classify: itemType.HG,
         fire_mode: '2',
         reliability: '00[99]',
-        r_point_blank: '-10※',
-        r_short: '-10※',
+        r_point_blank: '-10',
+        r_short: '-10',
         r_middle: '-40',
         r_long: '×',
         penetration: bullet.CAL_45ACP_PNT,
@@ -1278,7 +1395,8 @@ export const ITEMS: ItemData[] = [
         item_weight: '2,200g',
         efficiency: [
             '★片手-20%',
-            '弾倉交換：[アイテム使用]2回'
+            '弾倉交換：[アイテム使用]2回',
+            '改造不可'
         ],
         note: '.45ACPの威力を倍増させるというコンセプトで作られた、2丁が合体している謎のガバメント。ただ合わせたわけではなく、専用設計である。'
     },
@@ -1838,7 +1956,7 @@ export const ITEMS: ItemData[] = [
         /*アイテム名*/item_name: 'H&K GLM',
         /*画像*/items_avatar: 'assets/img/Luncher/HK_GLM.jpg',
         /*種別*/classify: itemType.GL,
-        /*射撃モード*/fire_mode: 'Double-action',
+        /*射撃モード*/fire_mode: 'セミ',
         /*信頼性*/reliability: '□[00]',
         /*至近*/r_point_blank: '×',
         /*近距離*/r_short: '-25',
@@ -1863,6 +1981,69 @@ export const ITEMS: ItemData[] = [
             '部位狙い不可'
         ],
         /*説明*/note: 'HK社の新型グレネードランチャー。M203は銃身を前にスライドさせて薬室を開放する構造のため、装填できる弾薬の長さに制限があったが、M320はいかなる長さの弾薬も使用可能である。特に非致死性の弾薬は長いものが多い。セーフティレバーは左右両側から操作できる。アメリカ軍ではM320と呼称され、これはH&Kでの型式名である。'
+    },
+    // FN EGLM
+    {
+        /*アイテム名*/item_name: 'FN EGLM',
+        /*画像*/items_avatar: 'assets/img/Luncher/eglm.jpg',
+        /*種別*/classify: itemType.GL,
+        /*射撃モード*/fire_mode: 'セミ',
+        /*信頼性*/reliability: '□[00]',
+        /*至近*/r_point_blank: '×',
+        /*近距離*/r_short: '-25',
+        /*中距離*/r_middle: '-35',
+        /*遠距離*/r_long: '-40',
+        /*貫通力*/penetration: bullet.CAL_40MM_PNT,
+        /*非貫通D*/non_penetration_damage: bullet.CAL_40MM_MIN,
+        /*貫通D*/penetration_damage: bullet.CAL_40MM_MAX,
+        /*射程*/range: '300m',
+        /*弾数*/mag_round: '1',
+        /*必要筋力*/kinryoku: '(両6/片8)',
+        /*CP*/size: '1×2',
+        /*消音LV*/silence: '1',
+        /*本体価格*/item_value: '$1200[12]',
+        /*マガジン価格*/mag_value: '$20(弾のみ1発)[9]',
+        /*弾薬*/cartridge: '40mm Grenade',
+        /*全長*/item_width: '350mm',
+        /*重量*/item_weight: '1,100g',
+        /*機能*/efficiency: [
+            '中心半径5m:[貫通D]/有効半径10m:[非貫通D]',
+            '5.56mm NATO弾薬のライフル(非ブルパップ)に装着可。装着時:補器(下)',
+            '部位狙い不可'
+        ],
+        /*説明*/note: 'FN社独自設計のグレネードランチャー。M203よりも軽量で扱いやすい。様々な種類の専用グレネードを発射することができる。'
+    },
+    // スマートグレネード
+    {
+        /*アイテム名*/item_name: 'スマートグレネード',
+        /*画像*/items_avatar: '',
+        /*種別*/classify: itemType.GL,
+        /*射撃モード*/fire_mode: 'セミ',
+        /*信頼性*/reliability: '□[00]',
+        /*至近*/r_point_blank: '×',
+        /*近距離*/r_short: '-15',
+        /*中距離*/r_middle: '-25',
+        /*遠距離*/r_long: '-30',
+        /*貫通力*/penetration: bullet.CAL_40MM_PNT,
+        /*非貫通D*/non_penetration_damage: bullet.CAL_40MM_MIN,
+        /*貫通D*/penetration_damage: bullet.CAL_40MM_MAX,
+        /*射程*/range: '300m',
+        /*弾数*/mag_round: '1',
+        /*必要筋力*/kinryoku: '(両6/片8)',
+        /*CP*/size: '1×2',
+        /*消音LV*/silence: '1',
+        /*本体価格*/item_value: '',
+        /*マガジン価格*/mag_value: '$200(弾のみ1発)[10]',
+        /*弾薬*/cartridge: '40mm Grenade',
+        /*全長*/item_width: '',
+        /*重量*/item_weight: '',
+        /*機能*/efficiency: [
+            '中心半径5m:[貫通D]/有効半径10m:[非貫通D]',
+            '部位狙い不可',
+            'DP-2',
+            'GLMまたはEGLMで使用可能'
+        ],
+        /*説明*/note: '周囲の環境を測定して、より効果的な攻撃を行うことができるようセンサーが組み込まれた特殊弾。'
     },
     // #endregion 
 
